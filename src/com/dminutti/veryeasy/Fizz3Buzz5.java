@@ -1,4 +1,4 @@
-package veryeasy;
+package com.dminutti.veryeasy;
 
 import java.util.ArrayList;
 

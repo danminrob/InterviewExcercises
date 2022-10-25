@@ -1,4 +1,4 @@
-package easy;
+package com.dminutti.easy;
 
 import java.util.ArrayDeque;
 import java.util.Deque;

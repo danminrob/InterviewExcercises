@@ -1,4 +1,4 @@
-package veryeasy;
+package com.dminutti.veryeasy;
 
 /*
 Given the position of a Bishop (A, B) on an 8 * 8 chessboard.

@@ -1,4 +1,4 @@
-package veryeasy;
+package com.dminutti.veryeasy;
 
 /*
 Reverse the string word by word.

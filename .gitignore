@@ -1,3 +1,6 @@
 .idea/
+.classpath
+.project
 out/
+bin/
 InterviewExcercises.iml
