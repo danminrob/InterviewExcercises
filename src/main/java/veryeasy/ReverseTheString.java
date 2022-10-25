@@ -1,4 +1,4 @@
-package com.dminutti.veryeasy;
+package main.java.veryeasy;
 
 /*
 Reverse the string word by word.
@@ -16,7 +16,7 @@ public class ReverseTheString {
     private static String reverseTheString(String text) {
         String[] words = text.trim().split("\\s+");
         StringBuilder result = new StringBuilder();
-        for (int i = words.length-1; i >= 0; i--) {
+        for (int i = words.length - 1; i >= 0; i--) {
             result.append(words[i]).append(" ");
         }
         return result.toString().trim();

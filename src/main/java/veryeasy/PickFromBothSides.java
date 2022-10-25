@@ -1,4 +1,4 @@
-package com.dminutti.veryeasy;
+package main.java.veryeasy;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -18,7 +18,7 @@ NOTE: Suppose B = 4 and array A contains 10 elements then
 public class PickFromBothSides {
 
     public static void testCases() {
-        ArrayList<Integer> array = new ArrayList<>(Arrays.asList(5, -2, 3 , 1, 2));
+        ArrayList<Integer> array = new ArrayList<>(Arrays.asList(5, -2, 3, 1, 2));
         String expected = "8";
         int result = pickFromBothSides(array, 3);
         System.out.printf("Expected: %s - Result: %s%n", expected, result);
@@ -31,13 +31,13 @@ public class PickFromBothSides {
 
     public static int pickFromBothSides(ArrayList<Integer> array, int nToSum) {
         int res = Integer.MIN_VALUE;
-        for (int i = 0, izq = nToSum-1, der = 0; i<=nToSum; i++, izq--, der++) {
+        for (int i = 0, izq = nToSum - 1, der = 0; i <= nToSum; i++, izq--, der++) {
             int run = 0;
             for (int j = izq; j >= 0; j--) {
                 run += array.get(j);
             }
             for (int j = der; j > 0; j--) {
-                run += array.get(array.size()-j);
+                run += array.get(array.size() - j);
             }
             res = Math.max(res, run);
         }

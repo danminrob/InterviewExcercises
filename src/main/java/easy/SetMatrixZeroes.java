@@ -1,11 +1,11 @@
-package com.dminutti.easy;
+package main.java.easy;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 
 public class SetMatrixZeroes {
 
-    public static void testCases(){
+    public static void testCases() {
         ArrayList<ArrayList<Integer>> matrix = new ArrayList<>();
         matrix.add(new ArrayList<>(Arrays.asList(1, 1)));
         matrix.add(new ArrayList<>(Arrays.asList(0, 0)));
@@ -46,11 +46,11 @@ public class SetMatrixZeroes {
 
     }
 
-    private static void setMatrixZeros(ArrayList<ArrayList<Integer>> matrix){
+    private static void setMatrixZeros(ArrayList<ArrayList<Integer>> matrix) {
         boolean firstRow = false;
         boolean firstColumn = false;
         int pos00 = matrix.get(0).get(0);
-        for (int row = 0; row<matrix.size(); row++) {
+        for (int row = 0; row < matrix.size(); row++) {
             for (int j = 0; j < matrix.get(0).size(); j++) {
                 if (matrix.get(row).get(j).equals(0)) {
                     if (row == 0) {
@@ -63,18 +63,18 @@ public class SetMatrixZeroes {
                 }
             }
         }
-        if(!firstColumn) {
+        if (!firstColumn) {
             matrix.get(0).set(0, pos00);
         }
-        for (int row = 1; row<matrix.size(); row++) {
-            for (int j = matrix.get(0).size()-1; j >= 0; j--) {
+        for (int row = 1; row < matrix.size(); row++) {
+            for (int j = matrix.get(0).size() - 1; j >= 0; j--) {
                 if (matrix.get(row).get(0).equals(0) || matrix.get(0).get(j).equals(0)) {
                     matrix.get(row).set(j, 0);
                 }
             }
         }
         if (firstRow) {
-            matrix.get(0).replaceAll(val->0);
+            matrix.get(0).replaceAll(val -> 0);
         }
     }
 

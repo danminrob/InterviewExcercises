@@ -1,4 +1,4 @@
-package com.dminutti.veryeasy;
+package main.java.veryeasy;
 
 /*
 Given the position of a Bishop (A, B) on an 8 * 8 chessboard.
@@ -22,6 +22,6 @@ public class TotalMovesForBishop {
     }
 
     public static int totalMovesForBishop(int row, int col) {
-        return Math.min(row-1, col-1) + Math.min(row-1, 8-col) + Math.min(8-row, col-1) + Math.min(8-row, 8-col);
+        return Math.min(row - 1, col - 1) + Math.min(row - 1, 8 - col) + Math.min(8 - row, col - 1) + Math.min(8 - row, 8 - col);
     }
 }
