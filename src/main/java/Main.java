@@ -1,6 +1,7 @@
 package main.java;
 
 import main.java.easy.ClimbStairs;
+import main.java.easy.MergeTwoSortedLists;
 import main.java.easy.NumberOfSteps;
 import main.java.easy.OpeningAndClosingBrackets;
 import main.java.easy.RomanToInt;
@@ -31,5 +32,6 @@ public class Main {
         NumberOfSteps.testCases();
         OpeningAndClosingBrackets.testCases();
         SetMatrixZeroes.testCases();
+        MergeTwoSortedLists.testCases();
     }
 }
