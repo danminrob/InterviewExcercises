@@ -43,4 +43,18 @@ public class OpeningAndClosingBrackets {
         return queue.isEmpty();
     }
 
+    private static boolean openingAndClosingBrackets2ndOption(String s) {
+        Map<Character, Character> p = Map.of(')','(','}','{',']','[');
+        LinkedList<Character> queue = new LinkedList<>();
+        for(char c : s.toCharArray()) {
+            Character opening = p.get(c);
+            if (opening == null) {
+                queue.add(c);
+            } else if (queue.isEmpty() || !opening.equals(queue.removeLast())) {
+                return false;
+            }
+        }
+        return queue.isEmpty();
+    }
+
 }
