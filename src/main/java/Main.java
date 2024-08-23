@@ -4,6 +4,7 @@ import main.java.easy.ClimbStairs;
 import main.java.easy.MergeTwoSortedLists;
 import main.java.easy.NumberOfSteps;
 import main.java.easy.OpeningAndClosingBrackets;
+import main.java.easy.RemoveDuplicatesFromSortedArray;
 import main.java.easy.RomanToInt;
 import main.java.easy.SetMatrixZeroes;
 import main.java.veryeasy.Fizz3Buzz5;
@@ -33,5 +34,6 @@ public class Main {
         OpeningAndClosingBrackets.testCases();
         SetMatrixZeroes.testCases();
         MergeTwoSortedLists.testCases();
+        RemoveDuplicatesFromSortedArray.testCases();
     }
 }
