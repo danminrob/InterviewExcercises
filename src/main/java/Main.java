@@ -7,6 +7,7 @@ import main.java.easy.OpeningAndClosingBrackets;
 import main.java.easy.RemoveDuplicatesFromSortedArray;
 import main.java.easy.RomanToInt;
 import main.java.easy.SetMatrixZeroes;
+import main.java.medium.LongestSubstringWithoutRepeatingCharacters;
 import main.java.veryeasy.Fizz3Buzz5;
 import main.java.veryeasy.PickFromBothSides;
 import main.java.veryeasy.ReverseTheString;
@@ -17,6 +18,7 @@ public class Main {
     public static void main(String[] args) {
 //        veryEasyExcercises();
 //        easyExcercises();
+//        mediumExcercises();
     }
 
     public static void veryEasyExcercises() {
@@ -35,5 +37,9 @@ public class Main {
         SetMatrixZeroes.testCases();
         MergeTwoSortedLists.testCases();
         RemoveDuplicatesFromSortedArray.testCases();
+    }
+
+    public static void mediumExcercises() {
+        LongestSubstringWithoutRepeatingCharacters.testCases();
     }
 }
