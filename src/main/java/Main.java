@@ -1,18 +1,8 @@
 package main.java;
 
-import main.java.easy.ClimbStairs;
-import main.java.easy.MergeTwoSortedLists;
-import main.java.easy.NumberOfSteps;
-import main.java.easy.OpeningAndClosingBrackets;
-import main.java.easy.RemoveDuplicatesFromSortedArray;
-import main.java.easy.RomanToInt;
-import main.java.easy.SetMatrixZeroes;
-import main.java.medium.LongestSubstringWithoutRepeatingCharacters;
-import main.java.veryeasy.Fizz3Buzz5;
-import main.java.veryeasy.PickFromBothSides;
-import main.java.veryeasy.ReverseTheString;
-import main.java.veryeasy.SmallerOrEqualElements;
-import main.java.veryeasy.TotalMovesForBishop;
+import main.java.easy.*;
+import main.java.medium.*;
+import main.java.veryeasy.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -37,6 +27,7 @@ public class Main {
         SetMatrixZeroes.testCases();
         MergeTwoSortedLists.testCases();
         RemoveDuplicatesFromSortedArray.testCases();
+        FunWithVowels.testCases();
     }
 
     public static void mediumExcercises() {
